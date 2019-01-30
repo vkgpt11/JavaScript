@@ -11,3 +11,7 @@ https://www.youtube.com/watch?v=XQpZIEejKDY
 
 ## Which HTTP verb will you use to filter items with 20 parameters? GET or POST?
 
+
+https://github.com/Pau1fitz/react-interview#how-does-react-work
+https://github.com/sudheerj/reactjs-interview-questions
+
