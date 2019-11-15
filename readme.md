@@ -18,3 +18,6 @@ https://github.com/sudheerj/reactjs-interview-questions
 
 ## How do you call an API in java script?
 https://stackoverflow.com/questions/36975619/how-to-call-a-rest-web-service-api-from-javascript
+
+## what is promis in javascript?
+https://www.geeksforgeeks.org/javascript-promises/
