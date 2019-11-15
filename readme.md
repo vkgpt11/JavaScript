@@ -15,3 +15,6 @@ https://www.youtube.com/watch?v=XQpZIEejKDY
 https://github.com/Pau1fitz/react-interview#how-does-react-work
 https://github.com/sudheerj/reactjs-interview-questions
 
+
+## How do you call an API in java script?
+https://stackoverflow.com/questions/36975619/how-to-call-a-rest-web-service-api-from-javascript
