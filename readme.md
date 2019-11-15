@@ -36,3 +36,6 @@ Two things that hit me the most for SVG and Canvas were,
       > Ability to use Canvas without the DOM, where as SVG depends heavily on DOM and as the complexity increases the performance slows down. Like in game design.
 
       > Advantage of using SVG would be that resolution remains the same across platforms which lacks in Canvas.
+      
+## Visible=false and display:none;
+https://stackoverflow.com/questions/6907422/question-regarding-visible-false-and-displaynone
