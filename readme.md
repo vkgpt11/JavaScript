@@ -47,10 +47,11 @@ https://www.youtube.com/watch?v=7oNWNlMrkpc
 ## what is shallow copy and deepcopy?
 
 ## How to maintain state between the pages in react and what happens when user press refresh button?
+https://stackoverflow.com/questions/52238637/react-router-how-to-pass-data-between-pages-in-react
 
 ## what is the arrow function and which scope this will refer to ?
 
-## what is the promise in javascript and diffrence between promise and async and await?\
+## what is the promise in javascript and diffrence between promise and async and await?
 
 ## what is bubbling in java script and how to prevent it?
 
