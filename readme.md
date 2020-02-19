@@ -39,3 +39,18 @@ Two things that hit me the most for SVG and Canvas were,
       
 ## Visible=false and display:none;
 https://stackoverflow.com/questions/6907422/question-regarding-visible-false-and-displaynone
+
+
+## What is prototype inheritance in java script?
+https://www.youtube.com/watch?v=7oNWNlMrkpc
+
+## what is shallow copy and deepcopy?
+
+## How to maintain state between the pages in react and what happens when user press refresh button?
+
+## what is the arrow function and which scope this will refer to ?
+
+## what is the promise in javascript and diffrence between promise and async and await?\
+
+## what is bubbling in java script and how to prevent it?
+
