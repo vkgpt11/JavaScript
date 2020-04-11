@@ -55,3 +55,10 @@ https://stackoverflow.com/questions/52238637/react-router-how-to-pass-data-betwe
 
 ## what is bubbling in java script and how to prevent it?
 
+# what is the difference between Ajax and Fetch?
+https://www.sitepoint.com/xmlhttprequest-vs-the-fetch-api-whats-best-for-ajax-in-2019/
+https://stackoverflow.com/questions/43017576/what-is-the-difference-between-fetch-and-jquery-ajax
+https://www.youtube.com/watch?v=UCd6LorxpkY
+https://www.youtube.com/watch?v=PoRJizFvM7s
+https://stackoverflow.com/questions/51209635/difference-between-fetch-and-axios
+
