@@ -65,4 +65,4 @@ https://stackoverflow.com/questions/51209635/difference-between-fetch-and-axios
 #Promise vs Async/Await?
 - Async/Await is more elegent way to use the promise 
 - https://levelup.gitconnected.com/async-await-vs-promises-4fe98d11038f
-
+- https://stackoverflow.com/questions/54495711/async-await-vs-then-which-is-the-best-for-performance
