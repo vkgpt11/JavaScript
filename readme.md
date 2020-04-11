@@ -62,3 +62,7 @@ https://www.youtube.com/watch?v=UCd6LorxpkY
 https://www.youtube.com/watch?v=PoRJizFvM7s
 https://stackoverflow.com/questions/51209635/difference-between-fetch-and-axios
 
+#Promise vs Async/Await?
+- Async/Await is more elegent way to use the promise 
+- https://levelup.gitconnected.com/async-await-vs-promises-4fe98d11038f
+
