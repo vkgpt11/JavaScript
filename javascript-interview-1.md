@@ -20,3 +20,6 @@ There is a slight difference -
     }
     
 ## What is the use of this keyword in different contexts?
+In **Methods** `this` refers to the current object.
+
+In **Functions** `this` refers to the global object (window, global)
