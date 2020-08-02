@@ -20,6 +20,47 @@ There is a slight difference -
     }
     
 ## What is the use of this keyword in different contexts?
-In **Methods** `this` refers to the current object.
++ In **Functions** `this` refers to the global object (window, global)
 
-In **Functions** `this` refers to the global object (window, global)
+        title = "Global";
+
+        console.log(this.title);
+
+        function func(){
+            console.log("From Func: " + this.title);
+        }
+
+        func();
+
+        function func2(){
+            console.log("From Func2: " + this.title);
+          title:"This is sub function"
+            function subFunc(){
+                console.log("From sub Func: " + this.title);
+          }
+
+            subFunc();
+        }
+        func2();
+
+Code will output Global in all of the different contexts of `this`.
+
+        function printMe(){
+          console.log(this.toString());
+        }
+        printMe(); // Prints the window object
+        let x = new printMe();
+        x; // Prints a new object 
+
++ In **Methods** `this` refers to the current object.
+        
+        title = "Global";
+        let obj = {
+            x:10,
+          display(){
+            console.log(this.x + ":" + this.title)
+          }
+        }
+        obj.display();
+
+`this` Refers to the object context 
