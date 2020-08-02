@@ -64,3 +64,8 @@ Code will output Global in all of the different contexts of `this`.
         obj.display();
 
 `this` Refers to the object context 
+
+https://js.do/code/477053
+
+
+
