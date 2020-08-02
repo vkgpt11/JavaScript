@@ -19,7 +19,7 @@ There is a slight difference -
     // some code...
     }
     
-## What is the use of this keyword in different contexts?
+## What is the use of `this` keyword in different contexts?
 + In **Functions** `this` refers to the global object (window, global)
 
         title = "Global";
