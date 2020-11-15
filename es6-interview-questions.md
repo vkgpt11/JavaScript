@@ -56,4 +56,4 @@ You can access the values of varriables inside an object using
     </script>
 ```
 ## 5. What is the difference between var, let and const?
-!(https://i.stack.imgur.com/GBn5a.jpg)[]
+![](https://i.stack.imgur.com/GBn5a.jpg)
