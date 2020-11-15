@@ -26,15 +26,32 @@ https://medium.com/@JeffLombardJr/understanding-foreach-map-filter-and-find-in-j
 - Similarly to other function IIFEs can also be named or anonymous, but even if an IIFE does have a name it is impossible to refer/invoke it.
 - IIFEs can also have parameters. 
 ```
-// Declaring the parameter required. 
-(function(dt) { 
-    console.log(dt.toLocaleTimeString()); 
-    // Passing the Parameter. 
-})(new Date()); 
+    // Declaring the parameter required. 
+    (function(dt) { 
+        console.log(dt.toLocaleTimeString()); 
+        // Passing the Parameter. 
+    })(new Date()); 
 ```
 
 ## 4. What are the ways to define an object in Javascript?
 - **"object constructor" syntax**
 ``` let person = new Object();```
+
 - **"object literal" syntax**
 ```let person = {};```
+
+You can access the values of varriables inside an object using 
+- Dot notation ```objectname.propertyname;```
+- bracket notation ```objectname['propertyname'];```
+
+```
+    <script> 
+    // an object 
+    let person = {      
+      name: "Mukul",  // by key "name" store value "Mukul" 
+      age: 22        // by key "age" store value 22 
+    };
+    document.write(person.name+'</br>');  
+    document.write(person['age']); 
+    </script>
+```
