@@ -8,3 +8,13 @@
 |It does not provide any operators | provides the map, forEach, filter, reduce, retry, retryWhen operators|
 
 https://medium.com/@mpodlasin/promises-vs-observables-4c123c51fe13
+
+## Why and when to use forEach, map, filter, reduce, and find in JavaScript.
+|Method|Use|
+|.forEach()| it has advantages over the `for` with regards to scoping & clean code |
+|.map()| to **transform** elements in an array|
+|.filter()| to **select** a subset of multiple elements from an array|
+|.find()| to **select** a single elememt from an array|
+|.reduce()| to **derive** a single value from multiple elements in an array.|
+
+https://medium.com/@JeffLombardJr/understanding-foreach-map-filter-and-find-in-javascript-f91da93b9f2c
