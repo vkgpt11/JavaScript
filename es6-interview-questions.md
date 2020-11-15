@@ -32,3 +32,9 @@ https://medium.com/@JeffLombardJr/understanding-foreach-map-filter-and-find-in-j
     // Passing the Parameter. 
 })(new Date()); 
 ```
+
+## 4. What are the ways to define an object in Javascript?
+- **"object constructor" syntax**
+``` let person = new Object();```
+- **"object literal" syntax**
+```let person = {};```
