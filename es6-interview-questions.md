@@ -11,6 +11,7 @@ https://medium.com/@mpodlasin/promises-vs-observables-4c123c51fe13
 
 ## Why and when to use forEach, map, filter, reduce, and find in JavaScript.
 |Method|Use|
+|-------|-----------|
 |.forEach()| it has advantages over the `for` with regards to scoping & clean code |
 |.map()| to **transform** elements in an array|
 |.filter()| to **select** a subset of multiple elements from an array|
