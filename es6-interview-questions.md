@@ -57,3 +57,19 @@ You can access the values of varriables inside an object using
 ```
 ## 5. What is the difference between var, let and const?
 ![](https://i.stack.imgur.com/GBn5a.jpg)
+
+## 6. What is Hoisting?
+- Hoisting is the JavaScript interpreter's action of moving all variable and function declarations to the top of the current scope. 
+- However, only the actual declarations are hoisted. Any assignments are left where they are.
+
+**Below code will get transform :**
+```
+    console.log(counter); // undefined
+    var counter = 1;
+```
+**to** 
+```
+    var counter;
+    console.log(counter); // undefined
+    counter = 1;
+```
