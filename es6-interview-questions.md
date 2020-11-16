@@ -73,3 +73,54 @@ You can access the values of varriables inside an object using
     console.log(counter); // undefined
     counter = 1;
 ```
+
+## 7. What is the use of `use strict`?
+- Strict mode eliminates errors that would be ignored in non-strict mode, thus making javascript "more secured"
+- It is the best practice to use strict in JS files.
+- Keyword indicates that code should be interpreted in strict mode specifies to user agents like browsers, and throw an error if the code doesn't make sense
+- Can prevent memory leaks 
+
+### Scenario 1: [NO STRICT MODE]
+
+```
+var city = "Chicago"
+console.log(city) // Prints the city name, i.e. Chicago
+```
+
+### Scenario 2: [NO STRICT MODE]
+
+```
+city = "Chicago"
+console.log(city) // Prints the city name, i.e. Chicago
+```
+Without strict mode turned on, user agents often go through a series of modifications to problematic code in an attempt to get it to make sense.
+
+### Scenario 3: [STRICT MODE]
+```
+'use strict';
+
+city = "Chicago"
+console.log(city) // Reference Error: asignment is undeclared variable city.
+```
+
+### Enable strict mode from eslint file
+``` module.exports = {
+    env: {
+        es6: true
+    },
+    rules : {
+        strict: ['error', 'global'],
+        },
+    };
+```
+https://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
+
+## 8. What is the difference between == vs === operators?
+- The == operator will compare for equality after doing any necessary type conversions. 
+- The === operator will not do the conversion, so if two values are not the same type === will simply return `false`
+
+```
+'1' === 1 // will return "false" because `string` is not a `number`
+'1' == 1 // will return "true"
+```
+![](https://i.stack.imgur.com/yISob.png)
