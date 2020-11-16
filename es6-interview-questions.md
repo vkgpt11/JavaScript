@@ -123,4 +123,4 @@ https://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascrip
 '1' === 1 // will return "false" because `string` is not a `number`
 '1' == 1 // will return "true"
 ```
-![](https://i.stack.imgur.com/yISob.png){height=50% width=50%}
+![](https://i.stack.imgur.com/yISob.png){ height=50% width=50% }
