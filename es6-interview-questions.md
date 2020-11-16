@@ -73,8 +73,86 @@ You can access the values of varriables inside an object using
     console.log(counter); // undefined
     counter = 1;
 ```
+## 7. What is the use of Arrow functions?
+- Short-hand notation for writing functions in ES6.
+- Consists of a parameter list ( ... ), followed by the =>marker and a function body
+- For single-argument functions, the parentheses may be omitted.
+- Return can be omitted, if the implemantion is without `{}`
+![](https://miro.medium.com/max/448/1*AwxBvPeMuKSLPvIIeqI1xw.png)
+- Arrow functions behavior with `this` keyword varies from that of normal functions. 
+- Each function in JavaScript defines its own this context but arrow functions capture the this value of the nearest enclosing context.
+- They cannot be used as constructors. E.g., you can’t use new with an arrow function. Hence arrow functions do not have a protoype property on them.
+![](https://miro.medium.com/max/603/1*WiJjD4EJ6Qe2Jo-LLR3YYg.png)
 
-## 7. What is the use of `use strict`?
+https://dev.to/wangonya/this-and-arrow-functions-a67
+
+## 8. What is the spread operator in Javascript (`...`)?
+- Spread operator takes an iterable (e.g. an array) and expands it into individual elements.
+- Used to make shallow copies of JS Objects.
+- The spread operator can be used to clone an iterable object or merge iterable objects into one.
+### Concat with spread operator
+```
+let arr = [1,2,3]
+let arr2 = [4,5]
+arr = [...arr,...arr2]
+console.log(arr) // [1,2,3,4,5]
+```
+
+### Copy with spread operator
+```
+let arr = [ 'a', 'b', 'c' ];
+let arr2 = [...arr];
+
+console.log(arr) // [ 'a', 'b', 'c' ]
+
+arr2.push('d'); //inserting an element at the end of arr2 
+  
+console.log(arr2); // [ 'a', 'b', 'c', 'd' ] 
+console.log(arr); // [ 'a', 'b', 'c' ] 
+```
+
+### Expand using spread operator 
+```
+let arr = ['a', 'b'];
+let arr2 = [...arr, 'c','d']
+
+console.log(arr2); // [ 'a', 'b', 'c', 'd' ] 
+```
+### Math using spread operator 
+```
+// with spread  
+let arr = [1,2,3,-1]; 
+  
+console.log(Math.min(...arr)); //-1
+```
+
+### Clone or Merge objects with spread operator 
+```
+const user1 = { 
+    name: 'Jen', 
+    age: 22 
+}; 
+  
+const clonedUser = { ...user1 }; 
+console.log(clonedUser); 
+```
+
+```
+const user1 = { 
+    name: 'Jen', 
+    age: 22, 
+}; 
+  
+const user2 = { 
+    name: "Andrew", 
+    location: "Philadelphia" 
+}; 
+  
+const mergedUsers = {...user1, ...user2}; 
+console.log(mergedUsers) 
+```
+
+## 9. What is the use of `use strict`?
 - Strict mode eliminates errors that would be ignored in non-strict mode, thus making javascript "more secured"
 - It is the best practice to use strict in JS files.
 - Keyword indicates that code should be interpreted in strict mode specifies to user agents like browsers, and throw an error if the code doesn't make sense
@@ -115,7 +193,7 @@ console.log(city) // Reference Error: asignment is undeclared variable city.
 ```
 https://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
 
-## 8. What is the difference between == vs === operators?
+## 10. What is the difference between == vs === operators?
 - The == operator will compare for equality after doing any necessary type conversions. 
 - The === operator will not do the conversion, so if two values are not the same type === will simply return `false`
 
@@ -123,4 +201,4 @@ https://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascrip
 '1' === 1 // will return "false" because `string` is not a `number`
 '1' == 1 // will return "true"
 ```
-![](https://i.stack.imgur.com/yISob.png =300x200)
+![](https://i.stack.imgur.com/yISob.png)
