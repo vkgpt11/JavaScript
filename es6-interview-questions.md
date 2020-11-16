@@ -78,10 +78,13 @@ You can access the values of varriables inside an object using
 - Consists of a parameter list ( ... ), followed by the =>marker and a function body
 - For single-argument functions, the parentheses may be omitted.
 - Return can be omitted, if the implemantion is without `{}`
+
 ![](https://miro.medium.com/max/448/1*AwxBvPeMuKSLPvIIeqI1xw.png)
+
 - Arrow functions behavior with `this` keyword varies from that of normal functions. 
 - Each function in JavaScript defines its own this context but arrow functions capture the this value of the nearest enclosing context.
 - They cannot be used as constructors. E.g., you can’t use new with an arrow function. Hence arrow functions do not have a protoype property on them.
+
 ![](https://miro.medium.com/max/603/1*WiJjD4EJ6Qe2Jo-LLR3YYg.png)
 
 https://dev.to/wangonya/this-and-arrow-functions-a67
