@@ -1,5 +1,58 @@
 # JavaScript interview Part - 1
-## What is the difference between function and method in javascript?
+## 1. What is the clouser in JS?
+ - Closure means that an inner function always has access to the vars and parameters of its outer function, even after the outer function has returned.
+Now, as per the definition above, InnerFunction() can access outerVariable even if it will be executed separately. Consider the following example.
+```
+function OuterFunction() {
+
+    var outerVariable = 100;
+
+    function InnerFunction() {
+        alert(outerVariable);
+    }
+
+    return InnerFunction;
+}
+var innerFunc = OuterFunction();
+
+innerFunc(); // 100
+```
+- One important characteristic of closure is that outer variables can keep their states between multiple calls. 
+- Remember, inner function does not keep the separate copy of outer variables but it reference outer variables,
+- That means value of the outer variables will be changed if you change it using inner function.
+
+## 2. When to use Closure?
+- Closure is useful in hiding implementation detail in JavaScript. In other words, it can be useful to create private variables or functions.
+
+The following example shows how to create private functions & variable.
+```
+var counter = (function() {
+  var privateCounter = 0;
+  function changeBy(val) {
+    privateCounter += val;
+  }
+  return {
+    increment: function() {
+      changeBy(1);
+    },
+    decrement: function() {
+      changeBy(-1);
+    },
+    value: function() {
+      return privateCounter;
+    }
+  };   
+})();
+
+alert(counter.value()); // 0
+counter.increment();
+counter.increment();
+alert(counter.value()); // 2
+counter.decrement();
+alert(counter.value()); // 1
+```
+
+## 9. What is the difference between function and method in javascript?
 There is a slight difference - 
 
 **Method** : Method is a function when object is associated with it.
@@ -19,7 +72,7 @@ There is a slight difference -
     // some code...
     }
     
-## What is the use of `this` keyword in different contexts?
+## 10. What is the use of `this` keyword in different contexts?
 + In **Functions** `this` refers to the global object (window, global)
 
         title = "Global";
