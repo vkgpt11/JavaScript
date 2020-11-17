@@ -18,6 +18,18 @@ https://medium.com/@mpodlasin/promises-vs-observables-4c123c51fe13
 |.find()| to **select** a single elememt from an array|
 |.reduce()| to **derive** a single value from multiple elements in an array.|
 
+```
+let numbers = [1, 2, 3];
+let map = numbers.map((x)=>x*2);
+console.log(map); // [2, 4, 6]
+let target = numbers.filter((x)=>x>1);
+console.log(target); // [ 2, 3 ]
+let find = numbers.find((x)=>x===1); // always retuns a single element
+console.log(find); // 1
+let sum = numbers.reduce((accumulator,current) => accumulator + current);
+console.log(sum); // 6
+```
+
 https://medium.com/@JeffLombardJr/understanding-foreach-map-filter-and-find-in-javascript-f91da93b9f2c
 
 ## 3. What is Immediately Invoked Function Expressions (IIFE)?
